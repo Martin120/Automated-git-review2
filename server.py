@@ -38,7 +38,7 @@ def github_review():
 {result.get('issues')}
 
 **Style Feedback**  
-{result.get('style')}
+{result.get('updated_code')}
 """
 
         post_comment(repo, pr_number, comment)
@@ -92,7 +92,7 @@ def webhook_auto_review():
 {result.get('issues')}
 
 **Style Feedback**  
-{result.get('style')}
+{result.get('updated_code')}
 """
 
         post_comment(context["repo"], context["pr_number"], comment)
