@@ -1,0 +1,4 @@
+venv/
+.env
+Automated-git-review2/
+*/__pycache__/
