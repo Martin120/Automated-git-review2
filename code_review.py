@@ -53,5 +53,5 @@ class CodeReviewAgent(MCPAgent):
         return {
             "summary": self._ask(f"Summarize this PR and its functionality:\n{prompt_prefix}"),
             "issues": self._ask(f"List any bugs, security issues, or code smells in the following code:\n{prompt_prefix}"),
-            "updated_code": self._ask(prompt)  # Request refactored code here
+            "updated_code": self._ask(prompt)  
         }
