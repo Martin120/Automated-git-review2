@@ -37,7 +37,7 @@ def github_review():
 **Detected Issues**  
 {result.get('issues')}
 
-**Style Feedback**  
+**Suggested Updated Code**  
 {result.get('updated_code')}
 """
 
@@ -91,7 +91,7 @@ def webhook_auto_review():
 **Detected Issues**  
 {result.get('issues')}
 
-**Style Feedback**  
+**Suggested Updated Code**  
 {result.get('updated_code')}
 """
 
