@@ -37,15 +37,14 @@ class CodeReviewAgent(MCPAgent):
         prompt = f"""
         You are an expert code reviewer.
         Below is a code snippet (diff). Please:
-        1. Summarize what the code does and its functionality.
-        2. Identify any issues, bugs, security flaws, or anti-patterns in the code.
-        3. Suggest improvements following best practices such as:
-            - Improving readability
+        1. Suggest improvements following best practices such as:
+            - Improving readability and add clear and understandable comments for functions and complex logic
+            - Ensuring code is modular and follows the DRY (Don't Repeat Yourself) principle
             - Error handling
             - Optimizing performance
             - Using appropriate variable and function names
             - Ensuring security best practices
-        4. Provide a refactored version of the code based on the improvements above, following the best coding standards.
+        2. Provide a refactored version of the code based on the improvements above, following the best coding standards.
     
         Diff:
         {diff}
